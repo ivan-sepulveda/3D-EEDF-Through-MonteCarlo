@@ -1,46 +1,208 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c4428cd-0400-4e4c-a4ca-f9a4bc5be1ab" name="Default" comment="" />
+    <list default="true" id="1c4428cd-0400-4e4c-a4ca-f9a4bc5be1ab" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/ivan.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/Ey=0Ex=50Electrons=10000MotionsPer=250/Te.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/Unreported/Ey=0Ex=50Electrons=1000MotionsPer=250/Te.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Results/Unreported/Ey=0Ex=50Electrons=5000MotionsPer=250/Te.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/add_electron_collisions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/compare_with_bolsig.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/determine_collision.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_conditions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plot_simulation_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/propagate_electrons.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/read_excel_file.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/return_collision_frequencies.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run_simulation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/3D-EEDF-Through-MonteCarlo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/3D-EEDF-Through-MonteCarlo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/ivansepulveda.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/ivansepulveda.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionFrequencies/cf_elastic.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionFrequencies/cf_elastic.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionFrequencies/cf_gp1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionFrequencies/cf_gp1.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionFrequencies/cf_gp10.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionFrequencies/cf_gp10.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionFrequencies/cf_gp2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionFrequencies/cf_gp2.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionFrequencies/cf_gp3.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionFrequencies/cf_gp3.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionFrequencies/cf_gp4.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionFrequencies/cf_gp4.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionFrequencies/cf_gp5.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionFrequencies/cf_gp5.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionFrequencies/cf_gp6.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionFrequencies/cf_gp6.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionFrequencies/cf_gp7.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionFrequencies/cf_gp7.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionFrequencies/cf_gp8.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionFrequencies/cf_gp8.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionFrequencies/cf_gp9.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionFrequencies/cf_gp9.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionFrequencies/cf_ionization.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionFrequencies/cf_ionization.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionFrequencies/cf_s3p1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionFrequencies/cf_s3p1.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionFrequencies/cf_s3p10.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionFrequencies/cf_s3p10.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionFrequencies/cf_s3p2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionFrequencies/cf_s3p2.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionFrequencies/cf_s3p3.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionFrequencies/cf_s3p3.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionFrequencies/cf_s3p4.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionFrequencies/cf_s3p4.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionFrequencies/cf_s3p5.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionFrequencies/cf_s3p5.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionFrequencies/cf_s3p6.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionFrequencies/cf_s3p6.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionFrequencies/cf_s3p7.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionFrequencies/cf_s3p7.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionFrequencies/cf_s3p8.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionFrequencies/cf_s3p8.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionFrequencies/cf_s3p9.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionFrequencies/cf_s3p9.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionFrequencies/cf_s5p1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionFrequencies/cf_s5p1.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionFrequencies/cf_s5p10.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionFrequencies/cf_s5p10.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionFrequencies/cf_s5p2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionFrequencies/cf_s5p2.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionFrequencies/cf_s5p3.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionFrequencies/cf_s5p3.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionFrequencies/cf_s5p4.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionFrequencies/cf_s5p4.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionFrequencies/cf_s5p5.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionFrequencies/cf_s5p5.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionFrequencies/cf_s5p6.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionFrequencies/cf_s5p6.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionFrequencies/cf_s5p7.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionFrequencies/cf_s5p7.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionFrequencies/cf_s5p8.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionFrequencies/cf_s5p8.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollisionFrequencies/cf_s5p9.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CollisionFrequencies/cf_s5p9.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CreatePropagateCollide.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmaelastic.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmaelastic.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmagp1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmagp1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmagp10.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmagp10.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmagp2.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmagp2.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmagp3.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmagp3.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmagp4.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmagp4.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmagp5.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmagp5.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmagp6.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmagp6.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmagp7.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmagp7.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmagp8.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmagp8.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmagp9.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmagp9.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmaionization.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmaionization.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas3p1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas3p1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas3p10.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas3p10.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas3p2.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas3p2.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas3p3.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas3p3.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas3p4.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas3p4.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas3p5.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas3p5.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas3p6.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas3p6.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas3p7.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas3p7.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas3p8.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas3p8.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas3p9.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas3p9.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas5p1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas5p1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas5p10.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas5p10.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas5p2.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas5p2.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas5p3.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas5p3.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas5p4.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas5p4.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas5p5.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas5p5.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas5p6.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas5p6.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas5p7.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas5p7.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas5p8.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas5p8.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas5p9.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CrossSectionsTheoretical/sigmas5p9.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrossSectionsTheoretical/xsigma.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CrossSectionsTheoretical/xsigma.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterpolatedCrossSections/i_elastic.csv" beforeDir="false" afterPath="$PROJECT_DIR$/InterpolatedCrossSections/i_elastic.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterpolatedCrossSections/i_gp1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/InterpolatedCrossSections/i_gp1.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterpolatedCrossSections/i_gp10.csv" beforeDir="false" afterPath="$PROJECT_DIR$/InterpolatedCrossSections/i_gp10.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterpolatedCrossSections/i_gp2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/InterpolatedCrossSections/i_gp2.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterpolatedCrossSections/i_gp3.csv" beforeDir="false" afterPath="$PROJECT_DIR$/InterpolatedCrossSections/i_gp3.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterpolatedCrossSections/i_gp4.csv" beforeDir="false" afterPath="$PROJECT_DIR$/InterpolatedCrossSections/i_gp4.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterpolatedCrossSections/i_gp5.csv" beforeDir="false" afterPath="$PROJECT_DIR$/InterpolatedCrossSections/i_gp5.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterpolatedCrossSections/i_gp6.csv" beforeDir="false" afterPath="$PROJECT_DIR$/InterpolatedCrossSections/i_gp6.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterpolatedCrossSections/i_gp7.csv" beforeDir="false" afterPath="$PROJECT_DIR$/InterpolatedCrossSections/i_gp7.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterpolatedCrossSections/i_gp8.csv" beforeDir="false" afterPath="$PROJECT_DIR$/InterpolatedCrossSections/i_gp8.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterpolatedCrossSections/i_gp9.csv" beforeDir="false" afterPath="$PROJECT_DIR$/InterpolatedCrossSections/i_gp9.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterpolatedCrossSections/i_ionization.csv" beforeDir="false" afterPath="$PROJECT_DIR$/InterpolatedCrossSections/i_ionization.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterpolatedCrossSections/i_s3p1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/InterpolatedCrossSections/i_s3p1.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterpolatedCrossSections/i_s3p10.csv" beforeDir="false" afterPath="$PROJECT_DIR$/InterpolatedCrossSections/i_s3p10.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterpolatedCrossSections/i_s3p2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/InterpolatedCrossSections/i_s3p2.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterpolatedCrossSections/i_s3p3.csv" beforeDir="false" afterPath="$PROJECT_DIR$/InterpolatedCrossSections/i_s3p3.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterpolatedCrossSections/i_s3p4.csv" beforeDir="false" afterPath="$PROJECT_DIR$/InterpolatedCrossSections/i_s3p4.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterpolatedCrossSections/i_s3p5.csv" beforeDir="false" afterPath="$PROJECT_DIR$/InterpolatedCrossSections/i_s3p5.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterpolatedCrossSections/i_s3p6.csv" beforeDir="false" afterPath="$PROJECT_DIR$/InterpolatedCrossSections/i_s3p6.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterpolatedCrossSections/i_s3p7.csv" beforeDir="false" afterPath="$PROJECT_DIR$/InterpolatedCrossSections/i_s3p7.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterpolatedCrossSections/i_s3p8.csv" beforeDir="false" afterPath="$PROJECT_DIR$/InterpolatedCrossSections/i_s3p8.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterpolatedCrossSections/i_s3p9.csv" beforeDir="false" afterPath="$PROJECT_DIR$/InterpolatedCrossSections/i_s3p9.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterpolatedCrossSections/i_s5p1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/InterpolatedCrossSections/i_s5p1.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterpolatedCrossSections/i_s5p10.csv" beforeDir="false" afterPath="$PROJECT_DIR$/InterpolatedCrossSections/i_s5p10.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterpolatedCrossSections/i_s5p2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/InterpolatedCrossSections/i_s5p2.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterpolatedCrossSections/i_s5p3.csv" beforeDir="false" afterPath="$PROJECT_DIR$/InterpolatedCrossSections/i_s5p3.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterpolatedCrossSections/i_s5p4.csv" beforeDir="false" afterPath="$PROJECT_DIR$/InterpolatedCrossSections/i_s5p4.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterpolatedCrossSections/i_s5p5.csv" beforeDir="false" afterPath="$PROJECT_DIR$/InterpolatedCrossSections/i_s5p5.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterpolatedCrossSections/i_s5p6.csv" beforeDir="false" afterPath="$PROJECT_DIR$/InterpolatedCrossSections/i_s5p6.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterpolatedCrossSections/i_s5p7.csv" beforeDir="false" afterPath="$PROJECT_DIR$/InterpolatedCrossSections/i_s5p7.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterpolatedCrossSections/i_s5p8.csv" beforeDir="false" afterPath="$PROJECT_DIR$/InterpolatedCrossSections/i_s5p8.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InterpolatedCrossSections/i_s5p9.csv" beforeDir="false" afterPath="$PROJECT_DIR$/InterpolatedCrossSections/i_s5p9.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/CFvEnergy with Null.png" beforeDir="false" afterPath="$PROJECT_DIR$/Results/CFvEnergy with Null.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/CFvEnergy.png" beforeDir="false" afterPath="$PROJECT_DIR$/Results/CFvEnergy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Cross Section vs Energy.png" beforeDir="false" afterPath="$PROJECT_DIR$/Results/Cross Section vs Energy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Ey=0Ex=10Electrons=25MotionsPer=50/EnergyDistribution.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/Ey=0Ex=10Electrons=25MotionsPer=50/NumElectronsvsEnergy.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Results/SpecificCollisionFrequencies.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReturnAllInterpolatedCSDatFiles.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpecificCollisionFrequencies.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/initialConditions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mcOuterLoop3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plot.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/returnOutcome.py" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/3D_EEDF_Through_MonteCarlo$plot.coverage" NAME="plot Coverage Results" MODIFIED="1533602907488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/3D_EEDF_Through_MonteCarlo$ReturnAllInterpolatedCSDatFiles.coverage" NAME="ReturnAllInterpolatedCSDatFiles Coverage Results" MODIFIED="1532824208425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/3D_EEDF_Through_MonteCarlo$plot.coverage" NAME="plot Coverage Results" MODIFIED="1551050896831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/3D_EEDF_Through_MonteCarlo$createIterCsvFiles.coverage" NAME="createIterCsvFiles Coverage Results" MODIFIED="1532459709166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/3D_EEDF_Through_MonteCarlo$initialConditions.coverage" NAME="initialConditions Coverage Results" MODIFIED="1533178217959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/3D_EEDF_Through_MonteCarlo$returnOutcome.coverage" NAME="returnOutcome Coverage Results" MODIFIED="1532676086808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/3D_EEDF_Through_MonteCarlo$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1532758141783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/3D_EEDF_Through_MonteCarlo$mcOuterLoop3.coverage" NAME="mcOuterLoop3 Coverage Results" MODIFIED="1532490792388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/3D_EEDF_Through_MonteCarlo$initialConditions.coverage" NAME="initialConditions Coverage Results" MODIFIED="1533178217959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/3D_EEDF_Through_MonteCarlo$ComputeSpecificCFs.coverage" NAME="ComputeSpecificCFs Coverage Results" MODIFIED="1532677598864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/3D_EEDF_Through_MonteCarlo$ReturnAllInterpolatedCSDatFiles.coverage" NAME="ReturnAllInterpolatedCSDatFiles Coverage Results" MODIFIED="1551051408472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/3D_EEDF_Through_MonteCarlo$CreatePropagateCollide.coverage" NAME="CreatePropagateCollide Coverage Results" MODIFIED="1532490506651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/3D_EEDF_Through_MonteCarlo$mcOuterLoop3.coverage" NAME="mcOuterLoop3 Coverage Results" MODIFIED="1549986062830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints>
+      <file url="file://$PROJECT_DIR$/plot_simulation_data.py" />
+    </disable_hints>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="3D-EEDF-Through-MonteCarlo" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mcOuterLoop3.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mcOuterLoop3.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/run_simulation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="7" column="59" lean-forward="false" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
-              <folding />
+            <state relative-caret-position="278">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
+              <folding>
+                <element signature="e#0#60#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="initialConditions.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/initialConditions.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/propagate_electrons.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="25" column="7" lean-forward="false" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-              <folding />
+            <state relative-caret-position="241">
+              <caret line="145" column="7" lean-forward="true" selection-start-line="145" selection-start-column="7" selection-end-line="145" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#64#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/initial_conditions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="61">
+              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -56,80 +218,102 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>floor</find>
-      <find>floor_</find>
-      <find>ir(</find>
-      <find>find_bin</find>
+      <find>run_elec</find>
+      <find>all_E</find>
+      <find>time</find>
+      <find>sim_plot</find>
+      <find>ground</find>
+      <find>contenders</find>
+      <find>goHomeDirectory</find>
+      <find>go_</find>
+      <find>home</find>
+      <find>random</find>
+      <find>math.</find>
+      <find>itr</find>
+      <find>itertools</find>
+      <find>CycleColors</find>
+      <find>list_colors</find>
+      <find>current</find>
+      <find>prob</find>
+      <find>prob =</find>
+      <find>cycle</find>
+      <find>eLoss_dict</find>
+      <find>eedfs</find>
+      <find>e_loss</find>
+      <find>100</find>
+      <find>100.00</find>
+      <find>current_accel_x</find>
+      <find>print_</find>
+      <find>status_format</find>
+      <find>acceleration_y</find>
+      <find>eci</find>
       <find>print</find>
-      <find>spreadsheet</find>
-      <find>ener_bins</find>
-      <find>dm</find>
-      <find>plot_</find>
-      <find>dc</find>
-      <find>dc(</find>
-      <find>df</find>
-      <find>df(</find>
-      <find>results_directory</find>
-      <find>CheckValues</find>
-      <find>AllIter</find>
-      <find>x_limit</find>
-      <find>list_keys</find>
-      <find>plt.scatter</find>
-      <find>short_e</find>
-      <find>list_electrons</find>
-      <find>_eV</find>
-      <find>plot_e</find>
-      <find>plt.plot</find>
-      <find># of Ele</find>
-      <find>plot_eV</find>
-      <find>plot</find>
-      <find>eV</find>
-      <find>key[</find>
-      <find>mean</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/plot_simulation_data.py" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/createIterCsvFiles.py" />
         <option value="$PROJECT_DIR$/CollisionFrequencies/cf_elastic.csv" />
-        <option value="$PROJECT_DIR$/ReturnAllInterpolatedCSDatFiles.py" />
-        <option value="$PROJECT_DIR$/returnOutcome.py" />
         <option value="$PROJECT_DIR$/ComputeSpecificCFs.py" />
         <option value="$PROJECT_DIR$/comparison.py" />
-        <option value="$PROJECT_DIR$/CreatePropagateCollide.py" />
         <option value="$PROJECT_DIR$/scratch.py" />
-        <option value="$PROJECT_DIR$/initialConditions.py" />
-        <option value="$PROJECT_DIR$/mcOuterLoop3.py" />
+        <option value="$PROJECT_DIR$/Results/Ey=0Ex=10Electrons=1000MotionsPer=250/Te.py" />
+        <option value="$PROJECT_DIR$/Results/Ey=0Ex=25Electrons=1000MotionsPer=250/Te.py" />
+        <option value="$PROJECT_DIR$/Results/Ey=0Ex=50Electrons=1000MotionsPer=250/Te.py" />
+        <option value="$PROJECT_DIR$/Results/Ey=0Ex=50Electrons=5000MotionsPer=250/Te.py" />
+        <option value="$PROJECT_DIR$/index.rst" />
+        <option value="$PROJECT_DIR$/_build/_sources/plot.py" />
+        <option value="$PROJECT_DIR$/_build/_sources/index.rst.txt" />
+        <option value="$PROJECT_DIR$/Results/Ey=0Ex=50Electrons=10000MotionsPer=250/Te.py" />
+        <option value="$PROJECT_DIR$/read_excel_file.py" />
+        <option value="$PROJECT_DIR$/Results/Ey=0Ex=25Electrons=10000MotionsPer=250/Te.py" />
+        <option value="$USER_HOME$/Library/Python/3.7/lib/python/site-packages/bolos/target.py" />
+        <option value="$USER_HOME$/Library/Python/3.7/lib/python/site-packages/bolos/process.py" />
+        <option value="$USER_HOME$/Library/Python/3.7/lib/python/site-packages/bolos/parser.py" />
+        <option value="$USER_HOME$/Library/Python/3.7/lib/python/site-packages/bolos/solver.py" />
+        <option value="$USER_HOME$/Library/Python/3.7/lib/python/site-packages/bolos/grid.py" />
+        <option value="$PROJECT_DIR$/Te.py" />
+        <option value="$PROJECT_DIR$/ReturnAllInterpolatedCSDatFiles.py" />
         <option value="$PROJECT_DIR$/plot.py" />
+        <option value="$PROJECT_DIR$/mcOuterLoop3.py" />
+        <option value="$PROJECT_DIR$/initialConditions.py" />
+        <option value="$PROJECT_DIR$/returnOutcome.py" />
+        <option value="$PROJECT_DIR$/CreatePropagateCollide.py" />
+        <option value="$PROJECT_DIR$/determine_collision.py" />
+        <option value="$PROJECT_DIR$/return_collision_frequencies.py" />
+        <option value="$PROJECT_DIR$/compare_with_bolsig.py" />
+        <option value="$PROJECT_DIR$/plot_simulation_data.py" />
+        <option value="$PROJECT_DIR$/add_electron_collisions.py" />
+        <option value="$PROJECT_DIR$/initial_conditions.py" />
+        <option value="$PROJECT_DIR$/propagate_electrons.py" />
+        <option value="$PROJECT_DIR$/run_simulation.py" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1366" />
-    <option name="height" value="768" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -139,36 +323,32 @@
             </path>
             <path>
               <item name="3D-EEDF-Through-MonteCarlo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="3D-EEDF-Through-MonteCarlo" type="462c0819:PsiDirectoryNode" />
-              <item name="Results" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="3D-EEDF-Through-MonteCarlo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="3D-EEDF-Through-MonteCarlo" type="462c0819:PsiDirectoryNode" />
-              <item name="Results" type="462c0819:PsiDirectoryNode" />
-              <item name="Ey=0Ex=10Electrons=25MotionsPer=50" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="3D-EEDF-Through-MonteCarlo" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/ivansepulveda/Documents/GitHub/3D-EEDF-Through-MonteCarlo/plot.py" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Python" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Results" />
+      <recent name="$PROJECT_DIR$/Results/Unreported" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/Results" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -184,7 +364,8 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.mcOuterLoop3">
-    <configuration name="ReturnAllInterpolatedCSDatFiles" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="CreatePropagateCollide" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="3D-EEDF-Through-MonteCarlo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -195,54 +376,103 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="3D-EEDF-Through-MonteCarlo" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ReturnAllInterpolatedCSDatFiles.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="initialConditions" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="3D-EEDF-Through-MonteCarlo" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/initialConditions.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="mcOuterLoop3" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="PYDEVD_LOAD_VALUES_ASYNC" value="True" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="3D-EEDF-Through-MonteCarlo" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mcOuterLoop3.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/propagate_electrons.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Te" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="3D-EEDF-Through-MonteCarlo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/compare_with_bolsig.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="3D-EEDF-Through-MonteCarlo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="add_electron_collisions" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="3D-EEDF-Through-MonteCarlo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/add_electron_collisions.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mcOuterLoop3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="3D-EEDF-Through-MonteCarlo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run_simulation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="plot" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="3D-EEDF-Through-MonteCarlo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -253,55 +483,53 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="3D-EEDF-Through-MonteCarlo" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plot.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plot_simulation_data.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
-    <configuration name="scratch" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="create_html" type="docs" factoryName="Sphinx task">
+      <module name="3D-EEDF-Through-MonteCarlo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="3D-EEDF-Through-MonteCarlo" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scratch.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="docutils_input_file" value="$PROJECT_DIR$" />
+      <option name="docutils_output_file" value="$PROJECT_DIR$/_build" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="html" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.mcOuterLoop3" />
-      <item index="1" class="java.lang.String" itemvalue="Python.plot" />
-      <item index="2" class="java.lang.String" itemvalue="Python.scratch" />
-      <item index="3" class="java.lang.String" itemvalue="Python.ReturnAllInterpolatedCSDatFiles" />
-      <item index="4" class="java.lang.String" itemvalue="Python.initialConditions" />
+    <list>
+      <item itemvalue="Python.mcOuterLoop3" />
+      <item itemvalue="Python.CreatePropagateCollide" />
+      <item itemvalue="Python.Te" />
+      <item itemvalue="Python.plot" />
+      <item itemvalue="Python.add_electron_collisions" />
+      <item itemvalue="Python docs.create_html" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.mcOuterLoop3" />
-        <item index="1" class="java.lang.String" itemvalue="Python.plot" />
-        <item index="2" class="java.lang.String" itemvalue="Python.initialConditions" />
-        <item index="3" class="java.lang.String" itemvalue="Python.ReturnAllInterpolatedCSDatFiles" />
-        <item index="4" class="java.lang.String" itemvalue="Python.scratch" />
+      <list>
+        <item itemvalue="Python.mcOuterLoop3" />
+        <item itemvalue="Python.add_electron_collisions" />
+        <item itemvalue="Python.plot" />
+        <item itemvalue="Python.CreatePropagateCollide" />
+        <item itemvalue="Python.Te" />
       </list>
     </recent_temporary>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
-  </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -310,8 +538,61 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1530156695637</updated>
+      <workItem from="1548111173116" duration="2371000" />
+      <workItem from="1548182470182" duration="295000" />
+      <workItem from="1548184281549" duration="950000" />
+      <workItem from="1548234856813" duration="372000" />
+      <workItem from="1548293357680" duration="299000" />
+      <workItem from="1548354125303" duration="386000" />
+      <workItem from="1548358158104" duration="1199000" />
+      <workItem from="1548366476688" duration="3402000" />
+      <workItem from="1548971453798" duration="135000" />
+      <workItem from="1549339449933" duration="806000" />
+      <workItem from="1549342224493" duration="35000" />
+      <workItem from="1549342418541" duration="6605000" />
+      <workItem from="1549957847694" duration="6601000" />
+      <workItem from="1549998448266" duration="390000" />
+      <workItem from="1550903681335" duration="110000" />
+      <workItem from="1551048434850" duration="6257000" />
+      <workItem from="1551162299712" duration="1205000" />
+      <workItem from="1552960075376" duration="1810000" />
+      <workItem from="1553582742277" duration="149000" />
+      <workItem from="1554363810411" duration="1221000" />
+      <workItem from="1555377789805" duration="7969000" />
+      <workItem from="1555476995566" duration="1027000" />
+      <workItem from="1555479816160" duration="2192000" />
+      <workItem from="1555537002889" duration="472000" />
+      <workItem from="1555539878978" duration="745000" />
+      <workItem from="1555753432159" duration="2332000" />
+      <workItem from="1555882213518" duration="1271000" />
+      <workItem from="1555916372496" duration="401000" />
+      <workItem from="1555988266267" duration="566000" />
+      <workItem from="1561434735859" duration="1581000" />
+      <workItem from="1561700200422" duration="4461000" />
+      <workItem from="1561922847822" duration="1262000" />
+      <workItem from="1561943373994" duration="1994000" />
+      <workItem from="1562010417747" duration="2937000" />
+      <workItem from="1562174403013" duration="1092000" />
+      <workItem from="1562258387727" duration="333000" />
+      <workItem from="1563056312901" duration="1792000" />
+      <workItem from="1563073707374" duration="7284000" />
+      <workItem from="1563386474312" duration="1817000" />
+      <workItem from="1563432524389" duration="314000" />
+      <workItem from="1563489889433" duration="580000" />
+      <workItem from="1563813527945" duration="613000" />
+      <workItem from="1563991352115" duration="460000" />
+      <workItem from="1564015096692" duration="666000" />
+      <workItem from="1564086649583" duration="5014000" />
+      <workItem from="1564521599447" duration="21542000" />
+      <workItem from="1564569767202" duration="17045000" />
+      <workItem from="1564958228705" duration="25850000" />
+      <workItem from="1565079167687" duration="13335000" />
+      <workItem from="1565287985962" duration="3346000" />
     </task>
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="164891000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -323,340 +604,335 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1366" height="741" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294964" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42302158" sideWeight="0.5030211" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4520124" sideWeight="0.49697885" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32662538" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30647483" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34667674" sideWeight="0.48245615" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30438066" sideWeight="0.51754385" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294964" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48245615" visible="true" weight="0.20100144" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" sideWeight="0.51754385" side_tool="true" weight="0.30438066" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32866243" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49697885" weight="0.38980892" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.2356688" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50429183" side_tool="true" weight="0.45776567" />
+      <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.49570817" visible="true" weight="0.4356688" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3057325" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32866243" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.3297568" />
+      <window_info active="true" anchor="right" id="SciView" order="4" visible="true" weight="0.10729614" />
+      <window_info anchor="right" id="R Graphics" order="5" weight="0.3297568" />
+      <window_info anchor="right" id="R Packages" order="6" />
+      <window_info anchor="right" x="0" y="0" width="310" height="626" id="Documentation" order="7" side_tool="true" weight="0.3297568" />
     </layout>
     <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294964" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42302158" sideWeight="0.5030211" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32805756" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3438849" sideWeight="0.49697885" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30647483" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30438066" sideWeight="0.48245615" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294964" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30438066" sideWeight="0.51754385" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48245615" visible="true" weight="0.30438066" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" sideWeight="0.51754385" side_tool="true" weight="0.30438066" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3294964" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49697885" visible="true" weight="0.3438849" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3294964" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5030211" side_tool="true" weight="0.42302158" />
+      <window_info anchor="bottom" id="Python Console" order="8" weight="0.32805756" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.30647483" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="SciView" order="4" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="11" />
-    </breakpoint-manager>
-    <watches-manager />
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/3D_EEDF_Through_MonteCarlo$docutils_task_in_index_rst.coverage" NAME="docutils task in index.rst Coverage Results" MODIFIED="1561702423884" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/3D_EEDF_Through_MonteCarlo$Te__2_.coverage" NAME="Te (2) Coverage Results" MODIFIED="1564560673473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Results/Ey=0Ex=50Electrons=10000MotionsPer=250" />
+    <SUITE FILE_PATH="coverage/3D_EEDF_Through_MonteCarlo$plot.coverage" NAME="plot Coverage Results" MODIFIED="1555390941814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/3D_EEDF_Through_MonteCarlo$create_html.coverage" NAME="create_html Coverage Results" MODIFIED="1561849104307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
+    <SUITE FILE_PATH="coverage/3D_EEDF_Through_MonteCarlo$mcOuterLoop3.coverage" NAME="mcOuterLoop3 Coverage Results" MODIFIED="1565079638388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mcOuterLoop3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CreatePropagateCollide.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1950">
-          <caret line="136" column="48" lean-forward="false" selection-start-line="136" selection-start-column="48" selection-end-line="136" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2655">
-          <caret line="190" column="17" lean-forward="false" selection-start-line="190" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/returnOutcome.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2430">
-          <caret line="167" column="26" lean-forward="false" selection-start-line="167" selection-start-column="26" selection-end-line="167" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mcOuterLoop3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="48" column="17" lean-forward="false" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/returnOutcome.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2430">
-          <caret line="167" column="26" lean-forward="false" selection-start-line="167" selection-start-column="26" selection-end-line="167" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2655">
-          <caret line="190" column="17" lean-forward="false" selection-start-line="190" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CreatePropagateCollide.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2205">
-          <caret line="153" column="0" lean-forward="false" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2655">
-          <caret line="190" column="17" lean-forward="false" selection-start-line="190" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mcOuterLoop3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="59" column="33" lean-forward="false" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CreatePropagateCollide.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2520">
-          <caret line="174" column="0" lean-forward="false" selection-start-line="174" selection-start-column="0" selection-end-line="183" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mcOuterLoop3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/returnOutcome.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2430">
-          <caret line="167" column="26" lean-forward="false" selection-start-line="167" selection-start-column="26" selection-end-line="167" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CreatePropagateCollide.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3375">
-          <caret line="231" column="78" lean-forward="false" selection-start-line="231" selection-start-column="78" selection-end-line="231" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2655">
-          <caret line="190" column="17" lean-forward="false" selection-start-line="190" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Comparison/Efield5/Comparison_EField=5.png" />
-    <entry file="file://$PROJECT_DIR$/CrossSectionsTheoretical/i_sigmaelastic.dat.csv" />
-    <entry file="file://$PROJECT_DIR$/CrossSectionsTheoretical/sigmagp1.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/createIterCsvFiles.py" />
-    <entry file="file://$PROJECT_DIR$/CrossSectionsTheoretical/i_elastic.csv" />
-    <entry file="file://$PROJECT_DIR$/CrossSectionsTheoretical/i_gp10.csv" />
-    <entry file="file://$PROJECT_DIR$/InterpolatedCrossSections/i_ionization.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pdb2q09.ent" />
-    <entry file="file://$PROJECT_DIR$/CollisionFrequencies/cf_gp1.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CollisionFrequencies/cf_elastic.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1400" column="5" lean-forward="false" selection-start-line="1400" selection-start-column="5" selection-end-line="1400" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cf_gp1.csv" />
-    <entry file="file://$PROJECT_DIR$/i_elastic.csv" />
-    <entry file="file://$PROJECT_DIR$/CrossSectionsTheoretical/sigmas3p7.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InterpolatedCrossSections/i_gp1.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27457">
-          <caret line="2811" column="20" lean-forward="false" selection-start-line="2811" selection-start-column="20" selection-end-line="2811" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CrossSectionsTheoretical/sigmas3p2.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CrossSectionsTheoretical/sigmagp2.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Results/Cross Section vs Energy.png" />
-    <entry file="file://$PROJECT_DIR$/Collision Frequency vs Energy.png" />
+    <entry file="file://$PROJECT_DIR$/Results/Unreported/Ey=0Ex=25Electrons=1000MotionsPer=250/Te.py" />
+    <entry file="file://$PROJECT_DIR$/Results/Unreported/Ey=0Ex=25Electrons=5000MotionsPer=250/Te.py" />
+    <entry file="file://$PROJECT_DIR$/Results/Unreported/Ey=0Ex=50Electrons=1000MotionsPer=250/Te.py" />
+    <entry file="file://$PROJECT_DIR$/Results/Unreported/Ey=0Ex=50Electrons=5000MotionsPer=250/Te.py" />
+    <entry file="file://$PROJECT_DIR$/source/conf.py" />
+    <entry file="file://$PROJECT_DIR$/index.html" />
+    <entry file="file://$PROJECT_DIR$/_build/.buildinfo" />
+    <entry file="file://$PROJECT_DIR$/conf.py" />
+    <entry file="file://$PROJECT_DIR$/_build/index.html" />
+    <entry file="file://$PROJECT_DIR$/index.rst" />
+    <entry file="file://$PROJECT_DIR$/_build/_sources/plot.py" />
+    <entry file="file://$PROJECT_DIR$/_build/_sources/index.rst.txt" />
     <entry file="file://$PROJECT_DIR$/CrossSectionsTheoretical/sigmaelastic.dat">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state>
+          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/InterpolatedCrossSections/i_elastic.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CrossSectionsTheoretical/sigmagp3.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ComputeSpecificCFs.py" />
-    <entry file="file://$PROJECT_DIR$/comparison.py" />
-    <entry file="file://$PROJECT_DIR$/Results/Collision Frequency vs Energy.png" />
-    <entry file="file://$PROJECT_DIR$/Results/CFvEnergy w:Null.png" />
-    <entry file="file://$PROJECT_DIR$/Results/CFvEnergy with Null.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Results/CFvEnergy.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scratch.py" />
-    <entry file="file://$PROJECT_DIR$/returnOutcome.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="87" column="103" lean-forward="false" selection-start-line="87" selection-start-column="103" selection-end-line="87" selection-end-column="103" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReturnAllInterpolatedCSDatFiles.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#3587#4286#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CreatePropagateCollide.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="38" column="51" lean-forward="false" selection-start-line="38" selection-start-column="50" selection-end-line="38" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Results/Cross Section vs Energy.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Results/probs with Null.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
+          <first_editor />
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/initialConditions.py">
+    <entry file="file://$PROJECT_DIR$/CollisionFrequencies/cf_s5p3.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Python/3.7/lib/python/site-packages/matplotlib/artist.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="25" column="7" lean-forward="false" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-          <folding />
+        <state relative-caret-position="129">
+          <caret line="911" selection-start-line="911" selection-end-line="911" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plot.py">
+    <entry file="file://$PROJECT_DIR$/Results/CFvEnergy.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Results/Cross Section vs Energy.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="256" column="49" lean-forward="true" selection-start-line="256" selection-start-column="49" selection-end-line="256" selection-end-column="49" />
+        <state relative-caret-position="241">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Results/Ey=0Ex=25Electrons=10000MotionsPer=250/LXCat-June2013.txt" />
+    <entry file="file://$USER_HOME$/Library/Python/3.7/lib/python/site-packages/pandas/core/indexing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="1245" selection-start-line="1245" selection-end-line="1245" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Reduced Electric Field vs Electron Temperature.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/read_excel_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3240">
+          <caret line="218" column="42" selection-start-line="218" selection-start-column="42" selection-end-line="218" selection-end-column="42" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
-            <element signature="e#657#1417#0" expanded="false" />
-            <element signature="e#1459#3519#0" expanded="false" />
-            <element signature="e#3577#4947#0" expanded="false" />
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mcOuterLoop3.py">
+    <entry file="file://$USER_HOME$/Library/Python/3.7/lib/python/site-packages/pandas/core/indexes/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="2658" selection-start-line="2658" selection-end-line="2658" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Results/Ey=0Ex=25Electrons=10000MotionsPer=250/Te.py" />
+    <entry file="file://$USER_HOME$/Library/Python/3.7/lib/python/site-packages/bolos/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Python/3.7/lib/python/site-packages/scipy/constants/codata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17940">
+          <caret line="1199" column="4" selection-start-line="1199" selection-start-column="4" selection-end-line="1199" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Python/3.7/lib/python/site-packages/scipy/constants/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="66" column="25" lean-forward="true" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Python/3.7/lib/python/site-packages/bolos/target.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="117" column="41" lean-forward="true" selection-start-line="117" selection-start-column="41" selection-end-line="117" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Python/3.7/lib/python/site-packages/bolos/process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="194" column="26" lean-forward="true" selection-start-line="194" selection-start-column="26" selection-end-line="194" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Python/3.7/lib/python/site-packages/bolos/parse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2019.1/python_stubs/-502983299/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Python/3.7/lib/python/site-packages/numpy/core/shape_base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="440" column="48" selection-start-line="440" selection-start-column="43" selection-end-line="440" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Python/3.7/lib/python/site-packages/bolos/parser.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="7" column="59" lean-forward="false" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
-          <folding />
+          <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_bundle/pydev_umd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="196" selection-start-line="196" selection-end-line="196" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Python/3.7/lib/python/site-packages/bolos/grid.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="42" column="56" selection-start-line="42" selection-start-column="56" selection-end-line="42" selection-end-column="56" />
+          <folding>
+            <element signature="e#85#112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Results/Ey=0Ex=50Electrons=10000MotionsPer=250/Te.py" />
+    <entry file="file://$USER_HOME$/Library/Python/3.7/lib/python/site-packages/bolos/solver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="624" column="35" lean-forward="true" selection-start-line="624" selection-start-column="35" selection-end-line="624" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Python/3.7/lib/python/site-packages/pyface/ui/wx/action/action_item.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1108">
+          <caret line="366" selection-start-line="366" selection-end-line="366" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compare_with_bolsig.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="38" lean-forward="true" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/tokenize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="446" selection-start-line="446" selection-end-line="446" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CrossSectionsTheoretical/xsigma.dat">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plot_simulation_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7980">
+          <caret line="532" selection-start-line="532" selection-start-column="2" selection-end-line="556" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add_electron_collisions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CrossSectionsTheoretical/sigmagp1.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/determine_collision.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/return_collision_frequencies.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/initial_conditions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/propagate_electrons.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="145" column="7" lean-forward="true" selection-start-line="145" selection-start-column="7" selection-end-line="145" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_simulation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#0#60#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
