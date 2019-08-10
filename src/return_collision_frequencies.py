@@ -1,8 +1,7 @@
-import os
+import os, csv
 import ntpath as nt
 import numpy, math
 from numpy import loadtxt
-import csv
 import errno
 import time
 from src.initial_conditions import *
@@ -27,16 +26,16 @@ def corresponding_atom_density(collision_type):
     Returns:
         Corresponding atom density as a float.
     """
-    if collision_type[0] == "s" or collision_type == "electron":
+    if collision_type.startswith("s") or collision_type == "electron":
         return metastable_state_atom_density
     return ground_state_atom_density
 
-def collision_frequency(ener_eV, cs_dictionary, collision_type):
+def collision_frequency(energy, cs_dictionary, collision_type):
     """Returns collision frequency for a given energy value. If the given energy is greater than 100.00, eV, it will
     be rounded down to 100.00 eV (also sets given NaN values as 100.00 eV).
 
     Args:
-        ener_eV: The energy of the electron in Electron Volts.
+        energy: The energy of the electron in Electron Volts.
         cs_dictionary: Dictionary of all electron cross section values for all possible collisions.
         collision_type: The type of collision that occurred (i.e. elastic, ionization, gp1, etc.).
 
@@ -44,14 +43,14 @@ def collision_frequency(ener_eV, cs_dictionary, collision_type):
         cf: The corresponding collision frequency as a float.
 
      """
-    if numpy.isnan(ener_eV) or ener_eV > 100.00:
-        ener_eV = 100.00
-    cf = corresponding_atom_density(collision_type)*(cs_dictionary[ir(ener_eV)])*math.sqrt(2*ir(ener_eV)*EV2J/m_e)
+    if numpy.isnan(energy) or energy > 100.00:
+        energy = 100.00
+    cf = corresponding_atom_density(collision_type)*(cs_dictionary[ir(energy)])*math.sqrt(2*ir(energy)*EV2J/m_e)
     return cf
 
 
 def silent_remove(path, is_directory=False):
-    """Removes a file without raising errno.ENOENT error if the file doesn't exist
+    """Removes a file or directory if it exists (specifically, without raising errno.ENOENT error)
 
     Args:
         path: The file or directory path as a string.
@@ -76,7 +75,8 @@ def silent_create(directory_name):
         directory_name: Intended directory name as astring.
 
       Returns:
-        True if directory was created, False if it already existed beforehand."""
+        True if directory was created, False if it already existed beforehand.
+    """
     if os.path.exists(directory_name):
         return False
     os.makedirs(directory_name)
@@ -86,7 +86,7 @@ def returnInterpolatedCsFromDAT(energy_eV_dat_file, ui_cross_section_dat_file):
     """Returns interpolated Cross Sections as a dictionary from a DAT file
 
     Args:
-        energy_eV_dat_file: xsigma.dat
+        energy_eV_dat_file: DAT file which lists the energies at which cross sections were measured (i.e. xsigma.dat)
         ui_cross_section_dat_file: Cross section dat file for specific collision type
 
     Returns:
@@ -124,7 +124,7 @@ def returnInterpolatedCsFromDAT(energy_eV_dat_file, ui_cross_section_dat_file):
     return energy_probability_dictionary
 
 def dat_to_diction(energy_eV_dat_file, ui_cross_section_dat_file):
-    """Turns a DAT File in to a dictionary.
+    """Turns a DAT File into a dictionary.
 
     Args:
         energy_eV_dat_file: xsigma.dat
@@ -204,18 +204,18 @@ def all_cs_theoretical():
     return dictionary_of_ds
 
 
-def ir(ener):
+def ir(energy):
     """Due to issues in Floating Point Arithmetic, I wrote the function ir() in order to help move between two point
     decimal accuracy floats and strings, as both of these formats were passed around frequently. Long story short,
     if you have any float, ir() will round it to two decimal points of accuracy.
 
     Args:
-        ener: The energy in electron volts you are rounding down to two decimal accuracy.
+        energy: The energy in electron volts you are rounding down to two decimal accuracy.
 
     Returns:
         That energy as a two point accuracy float (or at least it tries its best).
     """
-    return float(str(round(float(ener), 2)))
+    return float(str(round(float(energy), 2)))
 
 def returnIterCsDictionary():
     """Returns a dictionary regardless of whether or not the cross sections have been interpolated.
@@ -242,10 +242,11 @@ def returnIterCsDictionary():
             with open(csvFile, mode='r') as infile:
                 reader = csv.reader(infile)
                 for row in reader:
-                    # row will be a list of two strings that looks like: ['12.23', '5.48435e-26']
-                    # The first item, index = 0, is the interpolated energy
-                    # The second item, index = 1, is the interpolated cross section
-                    # The former will be the key to the dictionary, while the latter will be the value.
+                    """row will be a list of two strings that looks like: ['12.23', '5.48435e-26']
+                    The first item, index = 0, is the interpolated energy
+                    The second item, index = 1, is the interpolated cross section
+                    The former will be the key to the dictionary, while the latter will be the value.
+                    """
                     interpolated_cs_dict[float(row[0])] = float(row[1])
             dictionary_of_ds[csvFile.replace("i_", "").replace(".csv", "")] = interpolated_cs_dict
         return_to_start_directory()
@@ -403,8 +404,7 @@ def totalcfs_and_max(returnIncidentEnergy=False):
 # MTCF = Maximum Total Collision Frequency
 
 def return_ncf_diction():
-    """
-    Creates and returns null collision frequency dictionary
+    """Creates and returns null collision frequency dictionary
     """
     allnull = dict()
     now = 0.00
@@ -412,16 +412,6 @@ def return_ncf_diction():
         allnull[ir(now)] = maxx - TotalCF4ThisEnergy[ir(now)]
         now += 0.01
     return allnull
-
-
-def allEV():
-    """
-    Reads in the xsigma.dat file containing the eV intervals/values at which cross sections were measured.
-    """
-    chdir(getcwd() + '/CrossSectionsTheoretical')
-    all_ev = loadtxt("xsigma.dat")
-    chdir(getcwd().replace("/CrossSectionsTheoretical", ""))
-    return all_ev
 
 
 

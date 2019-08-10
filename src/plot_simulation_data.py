@@ -530,31 +530,31 @@ def probabilities(allCF = create_cf_dicts(), SumExcite = True, IndivExcite = Fal
     return_to_start_directory()
 
 
-# def reduced_ev_vs_electron_temp(list_reduced_evs, num_electrons=NOE, num_motions=MPE, bin_size=0.5):
-#     fig = plt.figure()
-#     ev_values = np.arange(bin_size/2, 100, bin_size)
-#     eedfs = pd.DataFrame(np.array(np.arange(0.25, 100, 0.50)), columns = ['Energy_in_eV'])
-#     energy_values = eedfs['Energy_in_eV'].values
-#
-#     eedfs = pd.DataFrame((np.arange(0.25, 100, 0.5), columns='energy'))
-#     for eV in list_reduced_evs:
-#         eedfs[str(eV) + "_Td"] = pd.Series(np.zeros(len(eedfs.index)), index=eedfs.index)
-#         current_energies = consolidate_energy_lists(run_electrons(num_electrons, num_motions))
-#         ener_bins = bin_energy_values(current_energies)
-#         for key in ener_bins:
-#             current_energy = key[1] - bin_size*0.5
-#             eedfs.loc[eedfs['Energy_in_eV'] == current_energy, str(eV) + "_Td"] \
-#                 = ener_bins[(current_energy-bin_size*0.5, current_energy+bin_size*0.5)]
-#
-#         eedf_values = eedfs[str(eV) + "_Td"].values
-#         simpson = integrate.simps(2 * energy_values * eedf_values / (3 * sum(eedf_values) * 0.5), energy_values)
-#         plt.scatter(eV, simpson, color='red')
-#
-#
-#     plt.xlabel("Reduced Electric Field (Td)")
-#     plt.ylabel("Electron Temperature (eV)")
-#     plt.savefig("Reduced Electric Field vs Electron Temperature.png")
-#     plt.show()
+def reduced_ev_vs_electron_temp(list_reduced_evs, num_electrons=NOE, num_motions=MPE, bin_size=0.5):
+    fig = plt.figure()
+    ev_values = np.arange(bin_size/2, 100, bin_size)
+    eedfs = pd.DataFrame(np.array(np.arange(0.25, 100, 0.50)), columns = ['Energy_in_eV'])
+    energy_values = eedfs['Energy_in_eV'].values
+
+    eedfs = pd.DataFrame((np.arange(0.25, 100, 0.5)), columns='energy')
+    for eV in list_reduced_evs:
+        eedfs[str(eV) + "_Td"] = pd.Series(np.zeros(len(eedfs.index)), index=eedfs.index)
+        current_energies = consolidate_energy_lists(run_electrons(num_electrons, num_motions))
+        ener_bins = bin_energy_values(current_energies)
+        for key in ener_bins:
+            current_energy = key[1] - bin_size*0.5
+            eedfs.loc[eedfs['Energy_in_eV'] == current_energy, str(eV) + "_Td"] \
+                = ener_bins[(current_energy-bin_size*0.5, current_energy+bin_size*0.5)]
+
+        eedf_values = eedfs[str(eV) + "_Td"].values
+        simpson = integrate.simps(2 * energy_values * eedf_values / (3 * sum(eedf_values) * 0.5), energy_values)
+        plt.scatter(eV, simpson, color='red')
+
+
+    plt.xlabel("Reduced Electric Field (Td)")
+    plt.ylabel("Electron Temperature (eV)")
+    plt.savefig("Reduced Electric Field vs Electron Temperature.png")
+    plt.show()
 
 def draw_probability_graph():
     probabilities(Null=True)
@@ -611,7 +611,7 @@ def return_top_cf_and_neighbors(num_cfs = 1, sum_excitation_states=False, null=F
     the first row. The following rows correspond the other processes at that same energy.
     An example output would look like:
 
-    .. table:: Collision Frequencies at Energy where the Maximum Collision Frequency Occurs
+    .. table:: CFs at Energy where the Maximum CF Occurs
         :widths: 6 10 6 12
 
         +-------------+---------------------+-------------+---------------------+
@@ -650,7 +650,5 @@ def return_top_cf_and_neighbors(num_cfs = 1, sum_excitation_states=False, null=F
     top_cf_and_neighbors = top_cf_and_neighbors.reset_index(drop=True)
     return top_cf_and_neighbors.reset_index(drop=True).head(num_cfs)
 
-print("starting\n")
-print(return_top_cf_and_neighbors(num_cfs=5, sum_excitation_states=False))
-print("\ndone")
 
+print()

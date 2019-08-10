@@ -24,15 +24,15 @@ def run_trials():
     os.makedirs(current_simulation_results_directory) # Creating results sub-directory specific to current conditions
     os.chdir(current_simulation_results_directory) # Changing
     list_electrons = run_electrons() # Master list of all electrons
-    all_energies_eV = plot_simulation_data.consolidate_energy_lists(list_electrons) # Energies electrons experienced
-    plot_simulation_data.write_eedf_spreadsheet(all_energies_eV) # Electron Energy Distribution Function Spreadsheet
-    plot_simulation_data.write_normalized_eedf_spreadsheet(all_energies_eV) # Normalized EEDF Spreadsheet
-    plot_simulation_data.plot_energy_distribution_function(all_energies_eV) # PDF of EEDF
+    all_energies_eV = src.plot_simulation_data.consolidate_energy_lists(list_electrons) # Energies electrons experienced
+    src.plot_simulation_data.write_eedf_spreadsheet(all_energies_eV) # Electron Energy Distribution Function Spreadsheet
+    src.plot_simulation_data.write_normalized_eedf_spreadsheet(all_energies_eV) # Normalized EEDF Spreadsheet
+    src.plot_simulation_data.plot_energy_distribution_function(all_energies_eV) # PDF of EEDF
     # plot.plot_paths(list_electrons) # Plots the electrons paths in 3D (computationally expensive)
     return_to_start_directory() # Returning to original directory
     return all_energies_eV, list_electrons
 
-# print("staring to run simulation")
-# energies, electrons = run_trials()
-# print("done running simulation")
+print("staring to run simulation")
+energies, electrons = run_trials()
+print("done running simulation")
 
