@@ -1,0 +1,5 @@
+
+src main
+========
+.. automodule:: src.add_electron_collisions
+   :members:

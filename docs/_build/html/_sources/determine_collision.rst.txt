@@ -1,0 +1,4 @@
+src main
+========
+.. automodule:: src.determine_collision
+   :members:

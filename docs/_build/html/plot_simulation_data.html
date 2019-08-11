@@ -1,0 +1,394 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>plot_simulation_data &#8212; Using Monte Carlo Simulations to Derive Electron Energy Distribution Function 1.0.0 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="return_collision_frequencies" href="return_collision_frequencies.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="return_collision_frequencies.html" title="return_collision_frequencies"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Using Monte Carlo Simulations to Derive Electron Energy Distribution Function 1.0.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-src.plot_simulation_data">
+<span id="plot-simulation-data"></span><h1>plot_simulation_data<a class="headerlink" href="#module-src.plot_simulation_data" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="src.plot_simulation_data.bin_energy_values">
+<code class="sig-prename descclassname">src.plot_simulation_data.</code><code class="sig-name descname">bin_energy_values</code><span class="sig-paren">(</span><em class="sig-param">list_all_eV_values</em>, <em class="sig-param">bin_size=1</em>, <em class="sig-param">x_limit=40</em><span class="sig-paren">)</span><a class="headerlink" href="#src.plot_simulation_data.bin_energy_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bins energy values (in electron volts) from a list into a dictionary. The key is the
+in-between value. For example, if the bin size is 1, the key to the dictionary for the 0.0 to 1.0
+bin will be 0.5. Bins will be tuples where the 2nd value (index = 1) is non-inclusive. Example below</p>
+<p>example_list_all_eV_values = [0.5, 1.1, 1.2, 1.3, 2.0, 2.1]
+Bins for this would be as follows for bin_size = 1.0
+(0, 1): 1
+(1, 2): 3
+(2, 3): 2</p>
+<p>So the (0, 1) bin is really from 0 to 0.999. The (1, 2) bin is really from 1 to 1.999. And so on. We use maximum
+energy that occurred in the simulation as a bin cut-off point. For simplicity, we round to the nearest whole number.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>list_all_eV_values</strong> – List of all the energy values recorded.</p></li>
+<li><p><strong>bin_size</strong> – Size of the bins.</p></li>
+<li><p><strong>x_limit</strong> – If we want to cut off binning at a certain value (because of negligible magnitudes, use this parameter).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A dictionary that reflects the electron energy distribution.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bins</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="src.plot_simulation_data.condense_collision_frequency_dictionary">
+<code class="sig-prename descclassname">src.plot_simulation_data.</code><code class="sig-name descname">condense_collision_frequency_dictionary</code><span class="sig-paren">(</span><em class="sig-param">all_collision_frequencies</em><span class="sig-paren">)</span><a class="headerlink" href="#src.plot_simulation_data.condense_collision_frequency_dictionary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Because we have twenty or so different types of excitation, I wrote this function to sum each individual
+excitation collision frequency into one value keyed into the dictionary as ‘sumExcite’.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>AllCS</strong> – All energy values experienced at any step.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Dictionary where all excitation collision frequencies are summed into one
+total value per discrete energy (in electron volts).</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>condensed_collision_frequencies</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="src.plot_simulation_data.consolidate_collision_dicts">
+<code class="sig-prename descclassname">src.plot_simulation_data.</code><code class="sig-name descname">consolidate_collision_dicts</code><span class="sig-paren">(</span><em class="sig-param">list_of_electrons</em><span class="sig-paren">)</span><a class="headerlink" href="#src.plot_simulation_data.consolidate_collision_dicts" title="Permalink to this definition">¶</a></dt>
+<dd><p>I believe I wrote this function to view the overall number of collisions that happend for each collision type.
+If memory serves me write, I did verify the expected ratios of collisions. However as of now, the function has
+served it’s purpose and is no longer needed by the overall script. If any future user would wish to use this
+function, they’d have to figure out how to place unique markers using mayavi, or downgrade the simulation to 2D
+and use the trusty matplotlib markers.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>list_of_electrons</strong> – The list of all the electrons propagated.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A dictionary of electrons that experienced that type of collision at any point in their path.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>complete</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="src.plot_simulation_data.consolidate_energy_lists">
+<code class="sig-prename descclassname">src.plot_simulation_data.</code><code class="sig-name descname">consolidate_energy_lists</code><span class="sig-paren">(</span><em class="sig-param">list_of_electrons</em><span class="sig-paren">)</span><a class="headerlink" href="#src.plot_simulation_data.consolidate_energy_lists" title="Permalink to this definition">¶</a></dt>
+<dd><p>Combines the energies from all the electrons popagated into one list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>list_of_electrons</strong> – Is the list of all electrons propagated.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Array with every single energy value experienced at every electron step.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>EndArray</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="src.plot_simulation_data.find_corresponding_bin">
+<code class="sig-prename descclassname">src.plot_simulation_data.</code><code class="sig-name descname">find_corresponding_bin</code><span class="sig-paren">(</span><em class="sig-param">eV_value</em>, <em class="sig-param">SizeOfBin</em><span class="sig-paren">)</span><a class="headerlink" href="#src.plot_simulation_data.find_corresponding_bin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a tuple that represents the bin.
+If our bin size is 0.5, a value of 0.75 would correspond to the 0.5-1.0 bin.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>eV_value</strong> – The value we are looking to bin.</p></li>
+<li><p><strong>SizeOfBin</strong> – The size of the bins we are using.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A tuple that represents the start and end points of the bin.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="src.plot_simulation_data.plot_energy_distribution_function">
+<code class="sig-prename descclassname">src.plot_simulation_data.</code><code class="sig-name descname">plot_energy_distribution_function</code><span class="sig-paren">(</span><em class="sig-param">list_all_eV_values</em>, <em class="sig-param">x_limit=40</em><span class="sig-paren">)</span><a class="headerlink" href="#src.plot_simulation_data.plot_energy_distribution_function" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plots the Electron Energy Distribution function</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>list_all_eV_values</strong> – All energy values experienced at any step.</p></li>
+<li><p><strong>x_limit</strong> – Energy cutoff point (b/c negligibility of values).</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="src.plot_simulation_data.plot_paths">
+<code class="sig-prename descclassname">src.plot_simulation_data.</code><code class="sig-name descname">plot_paths</code><span class="sig-paren">(</span><em class="sig-param">list_of_electrons</em><span class="sig-paren">)</span><a class="headerlink" href="#src.plot_simulation_data.plot_paths" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plots paths of all the electrons using Mayavi 3D image package</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>list_of_electrons</strong> – A list/array of electron class instances.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="src.plot_simulation_data.return_top_cf_and_neighbors">
+<code class="sig-prename descclassname">src.plot_simulation_data.</code><code class="sig-name descname">return_top_cf_and_neighbors</code><span class="sig-paren">(</span><em class="sig-param">num_cfs=1</em>, <em class="sig-param">sum_excitation_states=False</em>, <em class="sig-param">null=False</em>, <em class="sig-param">total=False</em><span class="sig-paren">)</span><a class="headerlink" href="#src.plot_simulation_data.return_top_cf_and_neighbors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a pandas.DataFrame with the highest collision frequency with the energy &amp; process for which it happens as
+the first row. The following rows correspond the other processes at that same energy.
+An example output would look like:</p>
+<table class="colwidths-given docutils align-default" id="id1">
+<caption><span class="caption-text">Collision Frequencies at Energy where the Maximum Collision Frequency Occurs</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 29%" />
+<col style="width: 18%" />
+<col style="width: 35%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"><p>collision_type</p></th>
+<th class="head"><p>energy</p></th>
+<th class="head"><p>collision_frequency</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>elastic</p></td>
+<td><p>14.00</p></td>
+<td><p>3.170513e+08</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>gp1</p></td>
+<td><p>14.00</p></td>
+<td><p>3.257905e+05</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>gp10</p></td>
+<td><p>14.00</p></td>
+<td><p>7.030499e+04</p></td>
+</tr>
+<tr class="row-odd"><td><p>3</p></td>
+<td><p>s3p7</p></td>
+<td><p>14.00</p></td>
+<td><p>6.631842e+04</p></td>
+</tr>
+<tr class="row-even"><td><p>.</p></td>
+<td><p>gp5</p></td>
+<td><p>14.00</p></td>
+<td><p>6.478863e+04</p></td>
+</tr>
+<tr class="row-odd"><td><p>.</p></td>
+<td><p>.</p></td>
+<td><p>.</p></td>
+<td><p>.</p></td>
+</tr>
+<tr class="row-even"><td><p>.</p></td>
+<td><p>.</p></td>
+<td><p>.</p></td>
+<td><p>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>num_cfs - 1</p></td>
+<td><p>last_collision_type</p></td>
+<td><p>last_energy</p></td>
+<td><p>last_collision_freq</p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="src.plot_simulation_data.return_top_cfs">
+<code class="sig-prename descclassname">src.plot_simulation_data.</code><code class="sig-name descname">return_top_cfs</code><span class="sig-paren">(</span><em class="sig-param">num_cfs=1</em><span class="sig-paren">)</span><a class="headerlink" href="#src.plot_simulation_data.return_top_cfs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a pandas.DataFrame of the highest collision frequencies and the energies/processes for which they happen.
+An example output would look like:</p>
+<table class="colwidths-given docutils align-default" id="id2">
+<caption><span class="caption-text">Top Collision Frequencies Pandas DataFrame</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 29%" />
+<col style="width: 18%" />
+<col style="width: 35%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"><p>collision_type</p></th>
+<th class="head"><p>energy</p></th>
+<th class="head"><p>collision_frequency</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>elastic</p></td>
+<td><p>14.00</p></td>
+<td><p>3.170513e+08</p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>ionization</p></td>
+<td><p>100.00</p></td>
+<td><p>1.691198e+08</p></td>
+</tr>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>gp1</p></td>
+<td><p>28.00</p></td>
+<td><p>5.535743e+06</p></td>
+</tr>
+<tr class="row-odd"><td><p>.</p></td>
+<td><p>.</p></td>
+<td><p>.</p></td>
+<td><p>.</p></td>
+</tr>
+<tr class="row-even"><td><p>.</p></td>
+<td><p>.</p></td>
+<td><p>.</p></td>
+<td><p>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>.</p></td>
+<td><p>.</p></td>
+<td><p>.</p></td>
+<td><p>.</p></td>
+</tr>
+<tr class="row-even"><td><p>num_cfs - 1</p></td>
+<td><p>last_collision_type</p></td>
+<td><p>last_energy</p></td>
+<td><p>last_collision_freq</p></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="src.plot_simulation_data.totalcfs_and_max2">
+<code class="sig-prename descclassname">src.plot_simulation_data.</code><code class="sig-name descname">totalcfs_and_max2</code><span class="sig-paren">(</span><em class="sig-param">allCS</em>, <em class="sig-param">excludeElasIon=False</em>, <em class="sig-param">returnIncidentEnergy=False</em><span class="sig-paren">)</span><a class="headerlink" href="#src.plot_simulation_data.totalcfs_and_max2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sums up the collision frequencies from the dictionaries in allCS (all Collision Frequencies)
+into a dictionary of their sums.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>allCS</strong> – Dictionary of Collision Frequencies.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Dictionary where keys are energy values in electron volts that correspond to a total collision
+frequency for an electron at that energy value.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>EnergyTotalCF</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="src.plot_simulation_data.write_eedf_spreadsheet">
+<code class="sig-prename descclassname">src.plot_simulation_data.</code><code class="sig-name descname">write_eedf_spreadsheet</code><span class="sig-paren">(</span><em class="sig-param">all_eV_values</em><span class="sig-paren">)</span><a class="headerlink" href="#src.plot_simulation_data.write_eedf_spreadsheet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writes values from bins into a Microsoft Excel format spreadsheet.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>all_eV_values</strong> – All energy values experienced at all steps by all electrons.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="src.plot_simulation_data.write_normalized_eedf_spreadsheet">
+<code class="sig-prename descclassname">src.plot_simulation_data.</code><code class="sig-name descname">write_normalized_eedf_spreadsheet</code><span class="sig-paren">(</span><em class="sig-param">all_eV_Values</em><span class="sig-paren">)</span><a class="headerlink" href="#src.plot_simulation_data.write_normalized_eedf_spreadsheet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writes values from bins into a Microsoft Excel format spreadsheet
+First we find the sum of all the electrons in every bin</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="propagate_electrons.html">propagate_electrons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="run_simulation.html">run_simulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="return_collision_frequencies.html">return_collision_frequencies</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">plot_simulation_data</a></li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/plot_simulation_data.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="return_collision_frequencies.html" title="return_collision_frequencies"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Using Monte Carlo Simulations to Derive Electron Energy Distribution Function 1.0.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2019, Iván Sepulveda.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.1.2.
+    </div>
+  </body>
+</html>

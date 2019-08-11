@@ -1,0 +1,5 @@
+:orphan:
+src main
+========
+.. automodule:: initial_conditions
+   :members:
