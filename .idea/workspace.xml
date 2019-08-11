@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c4428cd-0400-4e4c-a4ca-f9a4bc5be1ab" name="Default" comment="docs folder" />
+    <list default="true" id="1c4428cd-0400-4e4c-a4ca-f9a4bc5be1ab" name="Default" comment="docs folder">
+      <change beforePath="$PROJECT_DIR$/src/return_collision_frequencies.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/return_collision_frequencies.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,16 +72,16 @@
           <provider selected="true" editor-type-id="restructured-text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/return_collision_frequencies.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="415" selection-start-line="415" selection-end-line="415" />
+            <state relative-caret-position="405">
+              <caret line="298" column="45" selection-start-line="298" selection-start-column="45" selection-end-line="298" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CNAME">
           <provider selected="true" editor-type-id="text-editor">
             <state>
@@ -113,7 +115,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>AllIter</find>
       <find>AllIterCS</find>
       <find>sum_excitation</find>
       <find>sum</find>
@@ -143,6 +144,7 @@
       <find>operator</find>
       <find>oc</find>
       <find>doc</find>
+      <find>create_cf_files</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -198,10 +200,10 @@
         <option value="$PROJECT_DIR$/doc/return_collision_frequencies.rst" />
         <option value="$PROJECT_DIR$/doc/run_simulation.rst" />
         <option value="$PROJECT_DIR$/doc/conf.py" />
-        <option value="$PROJECT_DIR$/src/return_collision_frequencies.py" />
         <option value="$PROJECT_DIR$/src/run_simulation.py" />
         <option value="$PROJECT_DIR$/src/plot_simulation_data.py" />
         <option value="$PROJECT_DIR$/CNAME" />
+        <option value="$PROJECT_DIR$/src/return_collision_frequencies.py" />
       </list>
     </option>
   </component>
@@ -227,24 +229,6 @@
             <path>
               <item name="3D-EEDF-Through-MonteCarlo" type="b2602c69:ProjectViewProjectNode" />
               <item name="3D-EEDF-Through-MonteCarlo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="3D-EEDF-Through-MonteCarlo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="3D-EEDF-Through-MonteCarlo" type="462c0819:PsiDirectoryNode" />
-              <item name="doc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="3D-EEDF-Through-MonteCarlo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="3D-EEDF-Through-MonteCarlo" type="462c0819:PsiDirectoryNode" />
-              <item name="doc" type="462c0819:PsiDirectoryNode" />
-              <item name="_build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="3D-EEDF-Through-MonteCarlo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="3D-EEDF-Through-MonteCarlo" type="462c0819:PsiDirectoryNode" />
-              <item name="doc" type="462c0819:PsiDirectoryNode" />
-              <item name="_build" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="3D-EEDF-Through-MonteCarlo" type="b2602c69:ProjectViewProjectNode" />
@@ -522,7 +506,7 @@
       <workItem from="1565079167687" duration="13335000" />
       <workItem from="1565287985962" duration="31844000" />
       <workItem from="1565468559204" duration="3098000" />
-      <workItem from="1565505963079" duration="1355000" />
+      <workItem from="1565505963079" duration="1806000" />
     </task>
     <task id="LOCAL-00001" summary="adhering to style guide">
       <created>1565291489397</created>
@@ -552,11 +536,18 @@
       <option name="project" value="LOCAL" />
       <updated>1565506302990</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="docs folder">
+      <created>1565510283064</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1565510283064</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="197842000" />
+    <option name="totallyTimeSpent" value="198293000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -569,12 +560,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48245615" visible="true" weight="0.19670959" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.51754385" side_tool="true" weight="0.30438066" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32771084" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32771084" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49697885" weight="0.38980892" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -582,7 +574,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.23493975" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50429183" side_tool="true" weight="0.45776567" />
       <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.49570817" weight="0.43493977" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3927711" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3927711" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.33012047" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
@@ -902,17 +894,17 @@
     <entry file="file://$PROJECT_DIR$/doc/_build/html/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/return_collision_frequencies.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="415" selection-start-line="415" selection-end-line="415" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CNAME">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="8" selection-start-column="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/return_collision_frequencies.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="298" column="45" selection-start-line="298" selection-start-column="45" selection-end-line="298" selection-end-column="45" />
         </state>
       </provider>
     </entry>

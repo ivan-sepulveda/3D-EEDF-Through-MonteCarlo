@@ -254,7 +254,7 @@ def returnIterCsDictionary():
 
 interpolatedCsDict = returnIterCsDictionary()
 
-def create_cf_files(dictOfDicts=interpolatedCsDict):
+def create_cf_files(dictOfDicts):
     """Creates the Collision Frequency files from a Dictionary of Dictionaries
     Args:
         dictOfDicts: Dictionary of Collision Frequency dictionaries.
@@ -289,7 +289,7 @@ def create_cf_dicts():
     # If path does not exist, then we have to create the files and can return the dictionary while we're at it
     return_to_start_directory()
     if not os.path.exists(os.getcwd() + "/CollisionFrequencies"):
-        return create_cf_files()
+        return create_cf_files(interpolatedCsDict)
     # If path exists returns True that means the interpolated CS csv files are already created.
     # So now we read all those csv files into one dictionary.
     else:
