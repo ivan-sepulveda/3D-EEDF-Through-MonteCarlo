@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c4428cd-0400-4e4c-a4ca-f9a4bc5be1ab" name="Default" comment="docs folder" />
+    <list default="true" id="1c4428cd-0400-4e4c-a4ca-f9a4bc5be1ab" name="Default" comment="docs folder">
+      <change beforePath="$PROJECT_DIR$/CNAME" beforeDir="false" afterPath="$PROJECT_DIR$/CNAME" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,11 +72,20 @@
           <provider selected="true" editor-type-id="restructured-text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/return_collision_frequencies.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="247">
               <caret line="415" selection-start-line="415" selection-end-line="415" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CNAME">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="8" selection-start-column="8" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -142,7 +153,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ComputeSpecificCFs.py" />
         <option value="$PROJECT_DIR$/comparison.py" />
         <option value="$PROJECT_DIR$/scratch.py" />
         <option value="$PROJECT_DIR$/Results/Ey=0Ex=10Electrons=1000MotionsPer=250/Te.py" />
@@ -193,6 +203,7 @@
         <option value="$PROJECT_DIR$/src/return_collision_frequencies.py" />
         <option value="$PROJECT_DIR$/src/run_simulation.py" />
         <option value="$PROJECT_DIR$/src/plot_simulation_data.py" />
+        <option value="$PROJECT_DIR$/CNAME" />
       </list>
     </option>
   </component>
@@ -513,7 +524,7 @@
       <workItem from="1565079167687" duration="13335000" />
       <workItem from="1565287985962" duration="31844000" />
       <workItem from="1565468559204" duration="3098000" />
-      <workItem from="1565505963079" duration="550000" />
+      <workItem from="1565505963079" duration="877000" />
     </task>
     <task id="LOCAL-00001" summary="adhering to style guide">
       <created>1565291489397</created>
@@ -547,7 +558,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="197037000" />
+    <option name="totallyTimeSpent" value="197364000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -667,13 +678,6 @@
     <SUITE FILE_PATH="coverage/3D_EEDF_Through_MonteCarlo$mcOuterLoop3.coverage" NAME="mcOuterLoop3 Coverage Results" MODIFIED="1565079638388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Library/Python/3.7/lib/python/site-packages/scipy/constants/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="66" column="25" lean-forward="true" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Library/Python/3.7/lib/python/site-packages/bolos/target.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="397">
@@ -905,6 +909,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="415" selection-start-line="415" selection-end-line="415" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CNAME">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
         </state>
       </provider>
     </entry>
